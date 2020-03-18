@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div[class*="col-"]{
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.col-1{ width: 8.333333%;}
+.col-2{ width: 16.666666%;}
+.col-3{ width: 25%;}
+.col-4{ width: 33.333333%;}
+.col-5{ width: 41.666666%;}
+.col-6{ width: 50%;}
+.col-7{ width: 58.333333%;}
+.col-8{ width: 66.666666%;}
+.col-9{ width: 75%;}
+.col-10{width: 83.333333%;}
+.col-11{width: 91.666666%;}
+.col-12{width: 100%;}
+
+@media screen and (min-width: 768px){
+    .col-md-1{ width: 8.333333%;}
+    .col-md-2{ width: 16.666666%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.333333%;}
+    .col-md-5{ width: 41.666666%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.333333%;}
+    .col-md-8{ width: 66.666666%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{width: 83.333333%;}
+    .col-md-11{width: 91.666666%;}
+    .col-md-12{width: 100%;}
+}
+@media screen and (min-width: 992px){
+    .col-lg-1{ width: 8.333333%;}
+    .col-lg-2{ width: 16.666666%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.333333%;}
+    .col-lg-5{ width: 41.666666%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.333333%;}
+    .col-lg-8{ width: 66.666666%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{width: 83.333333%;}
+    .col-lg-11{width: 91.666666%;}
+    .col-lg-12{width: 100%;}
+}
+@media screen and (min-width: 1200px){
+    .col-xl-1{ width: 8.333333%;}
+    .col-xl-2{ width: 16.666666%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.333333%;}
+    .col-xl-5{ width: 41.666666%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.333333%;}
+    .col-xl-8{ width: 66.666666%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{width: 83.333333%;}
+    .col-xl-11{width: 91.666666%;}
+    .col-xl-12{width: 100%;}
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    width: 100%;
+    height: 100px;
+    background-color: #f00;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.block_bg{
+    background-image: url(http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-header-bg.jpg);width:100%;;height:900px;
+    width: 100%;
+    height: 900px; 
+    box-sizing: border-box; 
+}
+
+.top_menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 6.666666% 0px;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0 20px;
+    letter-spacing: 0.6px
+    ;
+}
+.top_menu img{
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+}
+.menu .title {
+    font-size: 16px;
+      font-family: sans-serif;
+      font-weight: 900;
+      letter-spacing: 2px; 
+}
+.top_title{
+      width: 58.333026%;
+      
+      text-align: left;
+      color: #ffffff;
+      box-sizing: border-box;
+      margin: 0px 20.8485%;
+      padding-top: 15.555555%;
+}
+.top_title h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+.top_title h2{
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.top_title a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.container_room_info{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.room_info_group .title h1{
+    color: #393a47;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 10px;
+}
+.room_type{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.room_info{
+   margin-left: 10px;
+   margin-right: 10px;
+   max-width: 380px;
+}
+.room_info img{
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 20px;
+}
+.room_info a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #393a47;
+    
+}
+.room_info h3{
+    font-size: 14px;
+    color: #828282;
+    margin-top: 20px;
+}
+.room_info span{
+    display: flex;
+    margin-top: 20px;
+}
+.room_info span h4{
+    color: #1d3ab0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.room_info span h5{
+    color: #aaaaaa;
+    font-size: 12px;
+    margin-left: 5px;
+    font-weight: 700;
+}
+.room_info_group .title{
+    color: #393a47;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+
+.view_wrap{
+    width: 100%;
+    
+    box-sizing: border-box;
+}
+.view_wrap img{
+    width: 100%;
+}
+.info h1{
+    font-size: 30px;
+    line-height: 39px;
+    color: #393a47;
+    font-weight: 700;
+    margin: 20px 0px;
+    
+}
+.info article{
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.info a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 14px;
+    color: #1d3ab0;
+    letter-spacing: 0.6px;
+    border: #1d3ab0 3px solid;
+    font-weight: 700;
+    padding: 15px 40px;
+    }
+
+
+    .FB_info_wrap{
+        width: 78.999341%;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+        margin-top: 17.213679%;
+        margin-bottom: 17.213679%;
+    }
+    /* .FB_info_group{
+        width: 42%;
+    } */
+    .FB_info h1{
+        font-size: 30px;
+        line-height: 30px;
+        color: #393a47;
+        margin: 20px 10px;
+        font-weight: 700;
+    }
+    .FB_info article{
+        font-size: 18px;
+        line-height: 25.2px;
+        color: #828282;
+        margin: 20px 10px;
+    }
+    .FB_info h2{
+        font-size: 18px;
+        line-height: 27px;
+        color: #393a47;
+        margin: 20px 10px;
+        font-weight: 700;
+    }
+    .FB_info h3{
+        font-size: 18px;
+        line-height: 25.2px;
+        color: #393a47;
+        margin: 20px 10px;
+    }
+    .FB_info h4{
+        font-size: 14px;
+        line-height: 19.6px;
+        color: #828282;
+        margin: 20px 10px;
+    }
+    .FB_pic{
+        width: 58%;
+        margin: 0 10px;
+    }
+
+@media screen and (min-width: 768px){
+    .view_wrap{
+        display: flex;
+    }
+    .view_wrap .view_pic{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .view_wrap .view_info{
+        width: 50%;
+        box-sizing: border-box;
+        padding-left: 20px;
+    }
+    .view_wrap:nth-child(even) .view_info{
+        order: 1;
+    }
+    .FB_info_wrap{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .FB_pic{
+        box-sizing: border-box;
+        width: 100%;
+        
+    }
+    .FB_pic img{
+        width: 100%;
+    }
+
+    .FB_info h1{
+        font-size: 20px;
+        line-height: 24px;
+        color: #393a47;
+        margin: 20px 10px;
+        font-weight: 700;
+    }
+    .FB_info article{
+        font-size: 15px;
+        line-height: 18px;
+        color: #828282;
+        margin: 20px 10px;
+    }
+    .FB_info h2{
+        font-size: 15px;
+        line-height: 19.5px;
+        color: #393a47;
+        margin: 20px 10px;
+        font-weight: 700;
+    }
+    .FB_info h3{
+        font-size: 15px;
+        line-height: 18px;
+        color: #393a47;
+        margin: 20px 10px;
+    }
+    .FB_info h4{
+        font-size: 14px;
+        line-height: 21px;
+        color: #828282;
+        margin: 20px 10px;
+    }
+    
+
+@media screen and (max-width: 992px){
+    .block_bg{
+        background-image: url(http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-header-bg.jpg);width:100%;;height:400px;
+        width: 100%;
+        height: 400px; 
+    }
+    .top_title{
+        width: 100%;
+        margin: 10px 10px;
+        padding: 10px;
+    }
+    .top_title h1{
+        font-size: 21px;
+        line-height: normal;
+    }
+    .top_title h2{
+        font-size: 17px;
+    }
+    .room_info_group .title h1{
+        font-size: 17px;
+    }
+    .room_info_group .title{
+        margin-top: 40px;
+    }
+    
+    
+    
+    
+    .info h1{
+        font-size: 17px;
+        line-height: 22.1px;
+        color: #393a47;
+        font-weight: 700;
+        margin: 20px 0px;
+        
+    }
+    .info article{
+        font-size: 14px;
+        line-height: 18.2px;
+        color: #828282;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .FB_info_wrap{
+        width: 100%;
+    }
+    .FB_info h1{
+        font-size: 17px;
+        line-height: 22.1px;
+        color: #393a47;
+        margin: 20px 10px;
+        font-weight: 700;
+    }
+    .FB_info article{
+        font-size: 16px;
+        line-height: 20.8px;
+        color: #828282;
+        margin: 20px 10px;
+    }
+    .FB_info h2{
+        font-size: 15px;
+        line-height: 19.5px;
+        color: #393a47;
+        margin: 20px 10px;
+        font-weight: 700;
+    }
+    .FB_info h3{
+        font-size: 16px;
+        line-height: 20.8px;
+        color: #393a47;
+        margin: 20px 10px;
+    }
+    .FB_info h4{
+        font-size: 14px;
+        line-height: 19.6px;
+        color: #828282;
+        margin: 20px 10px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    .info h1{
+        font-size: 30px;
+        line-height: 39px;
+        color: #393a47;
+        font-weight: 700;
+        margin: 20px 0px;
+        
+    }
+    .info article{
+        font-size: 16px;
+        line-height: 24px;
+        color: #828282;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .info a{
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 14px;
+        color: #1d3ab0;
+        letter-spacing: 0.6px;
+        border: #1d3ab0 3px solid;
+        font-weight: 700;
+        padding: 15px 40px;
+    }
+    
+}
