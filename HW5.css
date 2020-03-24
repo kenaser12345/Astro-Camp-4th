@@ -1,0 +1,269 @@
+.body {
+    font-family: arial;
+}
+.title{
+    text-align: center;
+    font-size: 24px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: #555555;
+}
+span{
+    display: block;
+    border: 2px solid #d90845;
+    width: 70px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.mr-auto, .mx-auto {
+    margin-left: auto!important;
+}
+.mr-auto, .mx-auto {
+    margin-right: 0 !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:#4e4e4e;
+}
+.navbar-brand{
+    margin-left: 10px;
+}
+.navbar-toggler {
+    height: 60px;
+    width: 60px;
+    font-size: 1.25rem;
+    background-color: #d90845;
+}
+.navbar-toggler-icon{
+    color: #ffffff;
+}
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0px;
+}
+.bg-light {
+    background-color: #ffffff!important;
+}
+
+
+/*第二區*/
+.about{
+    background-color: #f7f7f7;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+.row{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about_info{
+    text-align: center;
+}
+.row h1{
+    font-size: 24px;
+    line-height: 31.2px;
+    margin: 10 0px;
+}
+.row p{
+    font-size: 18px;
+    line-height: 24px;
+}
+/*第三區*/
+.advise{
+    margin-bottom: 100px;
+}
+
+.advise_info img{
+    width: 100%;
+}
+.about_info .caption a{
+    width: 300px;
+    margin: 20px;
+    text-decoration: none;
+    border: 1px gainsboro solid;
+}
+.advise_info img{
+    width: 100%;
+}
+.advise_info h1{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+    color:#666666
+}
+.advise_info strong{
+    padding: 2px;
+    font-size: 12px;
+    color: white;
+    margin: 10px;
+    border-radius: 3px 3px 3px 3px;
+}
+.advise_info p{
+    margin: 10px;
+    color:#999999;
+    font-size: 15px;
+    
+}
+#one-border{
+    margin: 10px;
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px gainsboro solid;
+    justify-content: left;
+}
+.advise_info p strong{
+    margin: 10px;
+    color: #666666;
+}
+.advise_info h2{
+    margin: 10px;
+    padding-bottom: 20px;
+    color: #666666;
+    font-size: 20px;
+}
+.more_page{
+    text-align: center;
+    margin: 30px;
+}
+.more_page a{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.more_page strong{
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 3px 3px 3px 3px;
+}
+/*第四區*/
+.lesson_advise .carousel-item{
+    width: 800px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.lesson_advise img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;   
+}
+.lesson_advise .introdution h1{
+    margin: 15px;
+    font-size: 25px;
+    color: #d90845;
+}
+.lesson_advise .introdution h2{
+    margin: 15px;
+    font-size: 15px;
+    color:#888888;
+}
+.lesson_advise .introdution p{
+    margin: 15px;
+    font-size: 18px;
+    color:#555555;
+}
+/*第五區*/
+/*第六區*/
+.showcase{
+    max-width: 1200px;
+}
+.detail{
+    border: 1px solid #666666;
+    margin: 5px;
+    padding: 0px;
+}
+.detail img{
+    width: 100%;
+}
+.showcase  h2{
+    font-size: 20px;
+    margin: 10px;
+}
+.showcase  p{
+    font-size: 15px;
+    margin: 10px;
+}
+.more{
+    text-align: right;
+    margin: 10px;
+}
+.showcase .more a{
+    text-decoration: none;
+    color: #d90845; 
+}
+.showcase a{
+    text-decoration: none;
+    color: #666666;
+}
+/*第七區*/
+.question{
+    max-width: 960px;
+    margin: auto;
+    color: #555555;
+}
+.question .common_problem a{
+    text-decoration: none;
+    color: #d90845;  
+}
+.question h1{
+    font-size: 25px;
+    margin: 30px;
+    text-align: center;
+}
+.question h2{
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+}
+.question .fbtiwwter{
+    text-align: center;
+    margin: 30px;
+}
+.question .fbtiwwter img{
+    margin: 20px;
+}
+/*第八區*/
+.contact p{
+    font-size: 14.4px;
+}
+.contact_info img{
+    width: 134px;
+}
+.contact .contact_title{
+    color: black;
+    font-weight: 700;
+}
+@media (min-width: 768px){
+   
+
+}
+
+
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+
+    /*第六區*/
+    .row{
+        flex-wrap: nowrap;
+    }
+}

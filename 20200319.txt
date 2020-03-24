@@ -1,0 +1,102 @@
+模組
+
+方法為何不直接寫在類別裡面就好?
+
+寫在特定類別裡面就只有那格類別可以用但模組化以後往後若是有其他類別需要使用可以直接include進類別並且使用不必重寫一次
+
+
+p Cat.superclass   可以印出此類別繼承至哪個類別
+
+p Cat.class     可以印出是哪個類別的
+
+類別也是物件
+所有類別都是由Class產出的
+
+p   Class.instance_methods - Module.instance_methods
+
+  :new :allocate : superclass
+
+模組無法使用 new 和繼承
+
+為何ruby常數可以被修改
+因為開放類別
+class Cat
+xxxxx
+end
+
+class Cat
+bbbbbbbb
+end
+
+=>
+class Cat
+xxxxxxxx
+bbbbbbbb
+end
+
+等於修改了類別
+類別又是以常數命名
+
+為何有basicobject
+若是創造物件卻不想要object那麼多功能就讓她繼承至basic object
+
+繼承 和 模組 ?????
+
+
+
+
+include  extend
+
+include 可以讓class創造的實體具有此模組
+
+
+
+extend
+則是讓類別擁有此模組但實體就無法使用
+
+
+
+
+
+module A
+  module B
+    class Cat
+    end
+  end
+end
+
+kitty = A::B::Cat.new   =>  A B可以是class or module 但Cat必須是類別才可以繼承或new
+
+
+rack
+
+提供可以使用call的物件
+
+誰可以?
+proc.new
+
+class Ken
+  def call
+  end
+end 
+
+
+duck typing
+
+
+
+
+
+sinatra
+上下順序由上至下
+找到就停止
+
+get "/about" do
+  erb :about   
+end
+原為
+get("/about") do
+  erb(:about)   
+end
+
+object  =  basic object + kernel
