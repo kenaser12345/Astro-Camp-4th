@@ -1,0 +1,841 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+div[class*="col-"]{
+    box-sizing: border-box;
+}
+.col-1{ width: 8.333333%;}
+.col-2{ width: 16.666666%;}
+.col-3{ width: 25%;}
+.col-4{ width: 33.333333%;}
+.col-5{ width: 41.666666%;}
+.col-6{ width: 50%;}
+.col-7{ width: 58.333333%;}
+.col-8{ width: 66.666666%;}
+.col-9{ width: 75%;}
+.col-10{width: 83.333333%;}
+.col-11{width: 91.666666%;}
+.col-12{width: 100%;}
+@media screen and (min-width: 768px){
+    .col-md-1{ width: 8.333333%;}
+    .col-md-2{ width: 16.666666%;}
+    .col-md-3{ width: 25%;}
+    .col-md-4{ width: 33.333333%;}
+    .col-md-5{ width: 41.666666%;}
+    .col-md-6{ width: 50%;}
+    .col-md-7{ width: 58.333333%;}
+    .col-md-8{ width: 66.666666%;}
+    .col-md-9{ width: 75%;}
+    .col-md-10{width: 83.333333%;}
+    .col-md-11{width: 91.666666%;}
+    .col-md-12{width: 100%;}
+}
+@media screen and (min-width: 992px){
+    .col-lg-1{ width: 8.333333%;}
+    .col-lg-2{ width: 16.666666%;}
+    .col-lg-3{ width: 25%;}
+    .col-lg-4{ width: 33.333333%;}
+    .col-lg-5{ width: 41.666666%;}
+    .col-lg-6{ width: 50%;}
+    .col-lg-7{ width: 58.333333%;}
+    .col-lg-8{ width: 66.666666%;}
+    .col-lg-9{ width: 75%;}
+    .col-lg-10{width: 83.333333%;}
+    .col-lg-11{width: 91.666666%;}
+    .col-lg-12{width: 100%;}
+}
+@media screen and (min-width: 1200px){
+    .col-xl-1{ width: 8.333333%;}
+    .col-xl-2{ width: 16.666666%;}
+    .col-xl-3{ width: 25%;}
+    .col-xl-4{ width: 33.333333%;}
+    .col-xl-5{ width: 41.666666%;}
+    .col-xl-6{ width: 50%;}
+    .col-xl-7{ width: 58.333333%;}
+    .col-xl-8{ width: 66.666666%;}
+    .col-xl-9{ width: 75%;}
+    .col-xl-10{width: 83.333333%;}
+    .col-xl-11{width: 91.666666%;}
+    .col-xl-12{width: 100%;}
+}
+
+
+/*開始~*/
+body{
+    font-family: sans-serif;
+    
+}
+
+.block_bg{
+    background-image: url(http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 900px;
+    max-width: 100%;
+    max-height: 100%; 
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    padding-bottom: 17%;
+    vertical-align: middle;
+}
+.logo{
+    padding-top: 6px;
+}
+.logo h1{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+.drop_down_menu{
+    margin-left: 10px;
+    margin-right: 50px;
+}
+.search_tool{
+    width: 30px;
+    height: 30px;
+}
+.search_tool img{
+    width: 100%;
+}
+.top_title{
+    width: 50%;
+    margin: auto;
+    color: #ffffff;
+}
+.top_title h1{
+    font-size: 48px;
+    line-height: 57.6px;
+    
+}
+.top_title h2{
+    font-size: 18px;
+    line-height: 28.8px;
+    margin: 10px 0px;
+}
+.top_title a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 14px;
+    font-weight: 800;
+    color: #ffffff;
+}
+.hb{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hb span{
+    height: 3px;
+    width: 20px;
+    background-color: black;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#menu-control{
+    display: none;
+}
+/*選單*/
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.drop_down_menu{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+ul.drop_down_menu li{
+    position: relative;
+    white-space: nowrap;
+    font-style: 12px;
+}
+
+ul.drop_down_menu > li:last-child{
+    border-right: none;
+}
+
+ul.drop_down_menu > li{
+    text-align: left;
+}
+
+ul.drop_down_menu a{
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 30px;
+    color: #ffffff;
+    
+}
+
+ul.drop_down_menu ul{
+    position: absolute;
+    z-index: 99;
+    left: -1;
+    top: 100%;
+    min-width: 180px;
+}
+ul.drop_down_menu ul a{
+    background-color: #ffffff;
+    color: black;
+}
+
+ul.drop_down_menu ul li:last-child{
+    border-bottom: none;
+}
+
+
+ul.drop_down_menu ul ul{
+    z-index: 999;
+    top: 0;
+    left: 90%;
+    margin-left: 15px;
+}
+
+ul.drop_down_menu ul{ /*隱藏次選單*/
+    display: none;
+}
+
+ul.drop_down_menu li:hover > ul{/*滑入展開選單*/
+    display: block;
+}
+
+
+/*第二區*/
+.room_type{
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+.all_room{
+    display: flex;
+}
+.room{
+    margin: 10px;
+}
+.room img{
+    width: 100%;
+}
+.room a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: #393a47;
+    margin-top: 10px;
+}
+.all_room h2{
+    font-size: 14px;
+    color: #828282;
+    margin: 15px 0px;
+}
+.all_room h3{
+    font-size: 12px;
+    color: #aaaaaa;
+}
+.all_room span{
+    font-size: 18px;
+    color: #1d3ab0;
+}
+/*第三區*/
+.view_wrap{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+.view_info{
+    width: 50%;
+}
+.top .info{
+    margin-left: 45%;
+}
+.bottom .info{
+    margin-left: 10px;
+}
+.view_pic{
+    width: 50%;
+    overflow: hidden;
+}
+.view_pic img{
+    width: 100%;
+    height: 100%;
+}
+.view_wrap:nth-child(even) .view_info{
+    order: 1;
+}
+.info{
+    width: 50%;
+    padding: 20px;
+}
+.info h1{
+    font-size: 30px;
+    line-height: 39px;
+    color: #393a47;
+    font-weight: 700;
+    margin: 20px 0px;
+    
+}
+.info article{
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.info a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 14px;
+    color: #1d3ab0;
+    letter-spacing: 0.6px;
+    border: #1d3ab0 3px solid;
+    font-weight: 700;
+    padding: 10px 20px;
+    }
+/*第四區*/
+.FB_info_wrap{
+    display: flex;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.FB_info_group{
+    width: 45%;
+}
+.FB_info{
+    box-sizing: border-box;
+}
+.FB_pic{
+    width: 55%;
+}
+.FB_pic img{
+    width: 100%;
+}
+.FB_info h1{
+    color: #393a47;
+    margin: 20px 10px;
+    font-weight: 700;
+}
+.FB_info article{
+    color: #828282;
+    margin: 20px 10px;
+}
+.FB_info h2{
+    color: #393a47;
+    margin: 20px 10px;
+    font-weight: 700;
+}
+.FB_info h3{
+    color: #393a47;
+    margin: 20px 10px;
+}
+.FB_info h4{
+    color: #828282;
+    margin: 20px 10px;
+}
+/*第五區*/
+.block_bg_2nd{
+    width: 100%;
+    background-image: url(http://template65287.motopreview.com/mt-demo/65200/65287/mt-content/uploads/2017/10/mt-1223-content-bg01.jpg);width:100%;height:80%;
+    background-attachment: fixed; 
+}
+.reviews{
+    width: 50%;
+    margin: auto;
+}
+.reviews h1{
+    color: #ffffff;
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+.reviews article{
+    color: #ffffff;
+    margin-bottom:20px;
+}
+.reviews h2{
+    color: #ffffff;
+    font-weight: 700;
+}
+/*第六區*/
+.gallery{
+    width: 1200px;
+    margin: auto;
+    margin-top:150px;
+    margin-bottom: 150px;
+}
+.gallery h1{
+    font-size: 30px;
+    color: #393a47;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 10px;
+}
+.pic_group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+}
+
+/*第七區*/
+.map{
+    width: 100%;
+}
+.map iframe{
+    width: 100%;
+}
+
+/*手機版面*/
+@media screen and (max-width: 767px){
+    .block_bg{
+        height: 400px;
+        width: 100%;
+        position: relative;
+    }
+    .hb{
+        display: flex;
+        position: absolute;
+        right: 45%;
+        top: 20%;
+    }
+    .main_li{
+        width: 88vw;
+    }
+    #menu-control:checked ~ .drop_down_menu a{
+        display: flex;
+        flex-wrap: wrap;
+        background-color:#ffffff;
+        color: #1d3ab0;
+    }
+    .drop_down_menu{
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+        margin: auto;
+    }
+    .menu{
+        padding-bottom: 5%;
+        margin-left: 10px;
+        justify-content: space-between;
+    }
+    .top_title{
+        width: 100%;
+        margin: 10px;
+    }
+    .top_title h1{
+        font-size: 21px;
+        line-height: 29.4px;
+    }
+    .top_title h2{
+        font-size: 17px;
+        line-height: 22.1px;
+        margin: 10px 0px;
+    }
+    ul.drop_down_menu a{
+        padding: 0 10px;
+        display: none;
+    }
+    /*第二區*/
+    .col-md-12{width: 100%;}
+    .all_room{
+        flex-wrap: wrap;
+    }
+    .info{
+        width: 100%;
+    }
+    .room img{
+        width: 380px;
+        height: 400px;
+        margin: auto;
+    }
+    .room a{
+        display: block;
+    }
+    /*第三區*/
+    .view_wrap{
+        flex-wrap: wrap;
+    }
+    .view_info{
+        width: 100%;
+    }
+    .top .info{
+        margin: auto;
+    }
+    .bottom .info{
+        margin: auto;
+    }
+    .view_pic{
+        width: 100%;
+    }
+    .view_wrap:nth-child(even) .view_info{
+        order: 0;
+    }
+    .info{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .info h1{
+        font-size: 20px;
+        line-height: 39px;
+    }
+    .info article{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .info a{
+        font-size: 13px;
+        line-height: 14px;
+    } 
+    /*第四區*/
+    .FB_info_wrap{
+        flex-wrap: wrap;
+    }
+    .col-md-12{width: 100%;}
+    .FB_info_group{
+        width: 100%;
+    }
+    .FB_pic{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .FB_pic img{
+        width: 100%;
+    }
+    .FB_info h1{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .FB_info article{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .FB_info h2{
+        font-size: 15px;
+        line-height: 19.5px;
+    }
+    .FB_info h3{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .FB_info h4{
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+    /*第五區*/
+    .reviews{
+        width: 100%;
+        padding:60px 0px ;
+    }
+    .reviews h1{
+        font-size: 20px;
+    }
+    .reviews article{
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+    .reviews h2{
+        font-size: 14px;
+    }
+    /*第六區*/
+    .gallery{
+        width: 100%;
+        margin: auto;
+        margin-top:40px;
+        margin-bottom: 40px;
+    }
+    .gallery h1{
+        font-size: 20px;
+    }
+    .pic{
+        max-width: auto;
+        max-height: auto;
+        margin: 10px;
+    }
+    .pic img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media screen and (min-width: 768px){
+    /*第一區*/
+    .block_bg{
+        height: 400px;
+        width: 100%;
+    }
+    .hb{
+        display: none;
+    }
+    .menu{    
+        padding-bottom: 5%;
+    }
+    .top_title{
+        width: 100%;
+        margin: 10px;
+    }
+    .top_title h1{
+        font-size: 35px;
+        line-height: 49px;
+    }
+    .top_title h2{
+        font-size: 16px;
+        line-height: 22.4px;
+        margin: 10px 0px;
+    }
+    ul.drop_down_menu a{
+        padding: 0 10px;
+    }
+    /*第三區*/
+    .info h1{
+        font-size: 17px;
+        line-height: 22.1px;
+        
+    }
+    .info article{
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    /*第四區*/
+    .FB_info h1{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .FB_info article{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .FB_info h2{
+        font-size: 15px;
+        line-height: 19.5px;
+    }
+    .FB_info h3{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .FB_info h4{
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+    /*第五區*/
+    .reviews{
+        padding:70px 0px ;
+    }
+    .reviews h1{
+        font-size: 17px;
+    }
+    .reviews article{
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+    .reviews h2{
+        font-size: 14px;
+    }
+    /*第六區*/
+    
+    .gallery{
+        width: 100%;
+    }
+    .pic_group{
+        padding: 0 5px;
+    }
+    .col-lg-4{ width: 33.333333%;}
+    .pic{
+        max-width: 580px;
+        padding: 10px;
+    }
+}    
+@media screen and (min-width: 992px){
+    /*第一區*/
+    .block_bg{
+        height: 600px;
+        width: 100%;
+    }
+    .hb{
+        display: none;
+    }
+    .menu{
+        padding-bottom: 17%;
+    }
+    .top_title{
+        width: 50%;
+        margin: auto;
+    }
+    .col-lg-4{ width: 33.333333%;}
+    /*第三區*/
+    .info h1{
+        font-size: 17px;
+        line-height: 22.1px;
+    }
+    .info article{
+        font-size: 14px;
+        line-height: 18.2px;
+    }
+    /*第四區*/ 
+    .FB_info h1{
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .FB_info article{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .FB_info h2{
+        font-size: 15px;
+        line-height: 19.5px;
+    }
+    .FB_info h3{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    .FB_info h4{
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+    /*第五區*/
+    .reviews{
+        padding:70px 0px ;
+    }
+    .reviews h1{
+        font-size: 17px;
+    }
+    .reviews article{
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+    .reviews h2{
+        font-size: 14px;
+    }
+    /*第六區*/
+    .gallery{
+        width: 100%;
+    }
+    .pic_group{
+        padding: 0 5px;
+    }
+    .col-lg-4{ width: 33.333333%;}
+    .pic{
+        max-width: 580px;
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    /*第一區*/
+    .block_bg{
+        height: 900px;
+    }
+    .hb{
+        display: none;
+    }
+    .menu{
+        padding-bottom: 17%;
+    } 
+    .top_title{
+        width: 50%;
+        margin: auto;
+        color: #ffffff;
+    }
+    .top_title h1{
+        font-size: 48px;
+        line-height: 57.6px;
+        
+    }
+    .top_title h2{
+        font-size: 18px;
+        line-height: 28.8px;
+        margin: 10px 0px;
+    }
+    .top_title a{
+        text-decoration: none;
+        font-size: 13px;
+        line-height: 14px;
+        font-weight: 800;
+        color: #ffffff;
+    }
+    ul.drop_down_menu a{
+        padding: 0 30px;    
+    }
+    .col-xl-4{ width: 33.333333%;}
+    /*第三區*/
+    .info h1{
+        font-size: 30px;
+        line-height: 39px;
+    }
+    .info article{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .info a{
+        font-size: 13px;
+        line-height: 14px;
+    }
+    /*第四區*/
+    .FB_info h1{
+        font-size: 30px;
+        line-height: 30px;
+
+    }
+    .FB_info article{
+        font-size: 18px;
+        line-height: 25.2px;
+    }
+    .FB_info h2{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .FB_info h3{
+        font-size: 18px;
+        line-height: 25.2px;
+        color: #393a47;
+        margin: 20px 10px;
+    }
+    .FB_info h4{
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+    /*第五區*/
+    .reviews{
+        padding:140px 0px ;
+    }
+    .reviews h1{
+        font-size: 30px;
+    }
+    .reviews article{
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .reviews h2{
+        font-size: 14px;
+    }
+    /*第六區*/
+    .col-xl-4{ width: 33.333333%;}
+    .pic{
+        max-width: 380px;
+        max-height: 275px;
+    }
+}
